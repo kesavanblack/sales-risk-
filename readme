@@ -1,0 +1,56 @@
+pip install streamlit pandas matplotlib seaborn plotly xlsxwriter
+ 
+
+
+ # E-Commerce Sales Analysis
+
+## Overview
+This Streamlit application provides a comprehensive analysis of e-commerce sales data. Users can upload a CSV file and explore various insights through interactive visualizations.
+
+## Features
+- **File Upload & Reset**: Upload CSV files for analysis and reset the upload.
+- **Overview Dashboard**: Displays key sales metrics using cards.
+- **Product Analysis**:
+  - Top-selling products
+  - Revenue by product
+  - Average order value
+  - Stock vs. Sales (if stock data is available)
+- **Customer Analysis**:
+  - Top returning customers
+  - Customer distribution by country
+  - Monthly customer trend
+- **Time Analysis**:
+  - Monthly revenue trend
+  - Sales heatmap by hour and day
+- **Download Report**: Download sales data as an Excel report.
+
+## Installation
+Ensure you have Python installed, then install the required dependencies:
+```bash
+pip install streamlit pandas matplotlib seaborn plotly xlsxwriter
+```
+
+## Usage
+Run the application with:
+```bash
+streamlit run app.py
+```
+
+## Data Requirements
+The uploaded CSV file should contain the following columns:
+- `InvoiceDate` (datetime format)
+- `Quantity` (integer)
+- `UnitPrice` (float)
+- `InvoiceNo` (identifier)
+- `CustomerID` (optional, for customer analysis)
+- `Description` (product name)
+- `Country` (customer's country)
+
+## Future Enhancements
+- Add more advanced ML-based demand forecasting.
+- Improve data filtering options.
+- Integrate real-time data updates.
+
+## License
+This project is for educational and analytical purposes only.
+
